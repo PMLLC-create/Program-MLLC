@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business & Administrative Support Services | Program M Tax & Financial</title>
+<meta name="description" content="Administrative support, document organization, records management, and business-process support for small businesses and organizations.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23123A4D%22/><text x=%2250%25%22 y=%2258%25%22 font-size=%2255%22 fill=%22%233F7A5D%22 text-anchor=%22middle%22 font-family=%22Georgia,serif%22>M</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site">
+  <div class="navbar">
+    <a class="brand" href="index.html"><span class="mark">M</span> Program M Tax &amp; Financial<span style="display:block; font-family:var(--sans); font-weight:500; font-size:.68rem; color:var(--slate); letter-spacing:.01em;">A Program Management LLC business</span></a>
+    <input type="checkbox" id="menu-toggle">
+    <label class="burger" for="menu-toggle">☰</label>
+    <nav class="links">
+      <a href="tax-services.html">Tax Services</a>
+      <a href="business-services.html">Business Services</a>
+      <a href="government-contracting.html">Government Contracting</a>
+      <a href="about.html">About</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="nav-cta" href="contact.html">Get Started</a>
+  </div>
+</header>
+
+<section id="business-services">
+  <div class="wrap">
+    <span class="page-label">Business Services</span>
+    <h2>Business &amp; Administrative Support</h2>
+    <p class="lede">Beyond tax preparation, Program M supports businesses and organizations with the administrative and financial-document work that keeps operations organized and audit-ready.</p>
+    <div class="rule"></div>
+    <div class="grid-3">
+      <div class="card"><h3>Administrative Support</h3><p>General administrative assistance for growing organizations.</p></div>
+      <div class="card"><h3>Document Organization</h3><p>Structuring and organizing business and financial documents for easy access and review.</p></div>
+      <div class="card"><h3>Records Management</h3><p>Ongoing management of business records to support accuracy and compliance readiness.</p></div>
+      <div class="card"><h3>Client Intake Support</h3><p>Intake coordination to help organizations onboard clients smoothly.</p></div>
+      <div class="card"><h3>Business Process Support</h3><p>Support with day-to-day processes that keep a small business running.</p></div>
+      <div class="card"><h3>Financial-Document Organization</h3><p>Organizing financial paperwork ahead of tax season, audits, or reporting deadlines.</p></div>
+      <div class="card"><h3>Small-Business Administrative Support</h3><p>Right-sized administrative support for owner-operated businesses.</p></div>
+      <div class="card"><h3>Business Education &amp; Resources</h3><p>Educational resources to help business owners better understand their own operations.</p></div>
+    </div>
+    <p style="margin-top:28px; font-size:.92rem;">Program M does not provide services that require professional licenses or credentials it does not hold, including legal, accounting, or investment-advisory services.</p>
+    <div class="cta-row"><a class="btn btn-primary" href="contact.html">Request Information</a></div>
+  </div>
+</section>
+
+
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Program M Tax &amp; Financial</h4>
+        <p style="color:#8FAFA6; font-size:.82rem; max-width:32ch; margin:0 0 8px;">A Program Management LLC business, registered in Texas</p>
+        <p style="color:#8FAFA6; font-size:.88rem; max-width:32ch;">Professional tax preparation, financial services, and business support built on integrity and accuracy.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul><li><a href="about.html">About</a></li><li><a href="resources.html">Resources</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul><li><a href="tax-services.html">Tax Services</a></li><li><a href="business-services.html">Business Services</a></li><li><a href="government-contracting.html">Government Contracting</a></li></ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-of-use.html">Terms of Use</a></li><li><a href="tax-disclaimer.html">Tax Services Disclaimer</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Program Management LLC. All rights reserved.</span>
+      <span class="placeholder">[TEXAS BUSINESS REGISTRATION / FILING NUMBER — ADD WHEN AVAILABLE]</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.querySelectorAll('nav.links a').forEach(function(a){{
+    a.addEventListener('click', function(){{ document.getElementById('menu-toggle').checked = false; }});
+  }});
+</script>
+</body>
+</html>
