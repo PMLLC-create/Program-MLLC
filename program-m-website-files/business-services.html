@@ -82,8 +82,8 @@
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
-  document.querySelectorAll('nav.links a').forEach(function(a){{
-    a.addEventListener('click', function(){{ document.getElementById('menu-toggle').checked = false; }});
+  document.querySelectorAll('nav.links a').forEach(function(a){
+    a.addEventListener('click', function(){ document.getElementById('menu-toggle').checked = false; });
   }});
 </script>
 </body>
